@@ -1,0 +1,327 @@
+%-------------------------
+% Resume in Latex
+% Author : Aras Gungore
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeJobSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+             #5 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Sam Laing} \\ \vspace{3pt}
+    \small
+    \faMobile \hspace{.5pt} \href{tel:353833764694}{+353 833764694}
+    $|$
+    \faAt \hspace{.5pt} \href{slaing155@gmail.com}{slaing155@gmail.com}
+    $|$
+    \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/sam-laing-196403214}{LinkedIn}
+    $|$
+    \faGithub \hspace{.5pt} \href{https://github.com/}{GitHub}
+    $|$
+    \faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/place/Bogazici+University+North+Campus/@41.0863067,29.0441352,15z/data=!4m5!3m4!1s0x0:0x9d2497b07c8edb2f!8m2!3d41.0863067!4d29.0441352}{Dublin, Ireland}
+\end{center}
+
+%----------- INTRODUCTION -----------
+\section{Introduction}
+   I am a highly motivated individual with a passion for problem solving. I have a strong interest in both the underlying theory and the application of machine learning algorithms. In particular, I am interested in deep learning models and Bayesian machine learning.
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    
+    \resumeEducationHeading
+      {University of Tuebingen
+      }{Germany}
+      {MSc. in Machine Learning;   \textbf{Current Grade Average: 1.48}}{Oct 2022 \textbf{--} Present}
+        \resumeSubHeadingListStart
+        \small{\item{
+	\textbf{Relevant coursework:} Deep Learning, Statistical Machine Learning, Probabalistic Machine Learning, Trustworthy Machine learning, Time Series Analysis, Self Driving Cars, Massively Parallel Computing (CUDA Programming), Information Theory }}
+        \resumeSubHeadingListEnd
+    
+    \resumeSubheading
+    {Trinity College Dublin}
+      {Ireland}
+      {BA Mathematics;   \textbf{First Class Honors (85\% average)}}{Sep 2018 \textbf{--} Jun 2022}
+    
+  \resumeSubHeadingListEnd
+
+
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        
+        \textbf{Languages:}{ Python, C++, SQL, , R, \LaTeX, Prolog, } \\ \vspace{3pt}
+        
+        \textbf{Technologies:}{PyTorch, Pandas, Git, DuckDB, FastAPI, Azure, JetBrains, SSH, GraphX, Pygame, Numpy, Plotly} \\ \vspace{3pt}
+        
+	\textbf{Techniques:}{CNNs, RNNs, Transformers, XGBoost , Random Forrest Models, Hypothesis Testing, GLMs, Gaussian Processes, Markov Chains, Deep Q-learning, Imitation Learning,   }
+        
+    }}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- EXPERIENCE -----------
+
+\section{Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeJobSubheading
+      {SoftCo}{Dublin, Ireland}
+      {Machine Learining Engineer}{May 2023 \textbf{--} Present, Part-time}
+      {\href{https://softco.com/}{SoftCo} }
+        \resumeItemListStart
+	\resumeItem{Was the first employee responsible for Machine Learning  at the compnay}
+            \resumeItem{Designed a Bayesian model to automate a financial matching task delivering significant increases in Purchase Order - Invoice matching rates (90\% touchless processing).}
+	    \resumeItem{Worked on a number of forecasting tasks to predict volumes of invoices processed per week for each customer of the business}
+	    \resumeItem{Designed and developed a Random Forrest model to handle a multi-label classification task with a large number of classes}
+	    \resumeItem{Helped with the development of a JSON file parser and the building of a data pipeline.}
+	    \resumeItem{Communicated frequently with Software Engineers through the Agile Scrum Framework regarding the deployment of models into production, the database architectures and the model APIs.}
+	    \resumeItem{Wrote a number of technical reports and documentation of the models in production.}
+        \resumeItemListEnd
+
+	\resumeSubheading
+	{Trinity College}{Dublin, Ireland}
+	{Bachelor's Thesis}{Sep 2021 - May 2022}
+	\resumeItemListStart
+	\resumeItem{Wrote a Bachelor's thesis under the supervision of \href{https://www.maths.tcd.ie/people/kellyj/}{Dr Jack Kelly} in which I applied category theoretical techniques (in particular simplicial homotopy theory) to prove several fundamental theorems of algebraic topology. Attached is a copy of the \href{https://github.com/sam-laing/bachelor-thesis/blob/main/diss.pdf}{thesis}  }
+	\resumeItemListEnd
+
+    \resumeSubheading
+      {Trinity College}{Dublin, Ireland}
+      {Undergraduate Researcher}{Jun 2020 \textbf{--} Aug 2020}
+        \resumeItemListStart
+	\resumeItem{Conducted research into the Classification of Finite Rings using techniques in commutative algebra and category theory under the supervision of Professor \href{https://www.maths.tcd.ie/~mascotn/}{Nicolas Mascot} .}
+        \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Trinity College}{Dublin, Ireland}
+      {Teaching Assistant}{Sep 2021 \textbf{--} Dec 2021 and Sep 2022 - December 2022}
+        \resumeItemListStart
+	\resumeItem{Corrected assignments for the advanced Engineering Mathematics course offerred at Trinity College Dublin. The topics included Fourier Analysis, Partial Differential Equations and Linear Programming.}
+        \resumeItemListEnd
+	\resumeSubheading
+	{Self Employed}{Sep 2019 - June 2022}
+	{Mathematics Tutor}{Dublin Ireland}
+    
+    % \resumeSubheading
+      % {Nanonetworking Research Group, Boğaziçi University}{Istanbul, Turkey}
+      % {Undergraduate Researcher}{Oct 2021 \textbf{--} Jun 2022, Part-time}
+        % \resumeItemListStart
+            % \resumeItem{Worked on the “Design and Implementation of Molecular Communication Systems Using Index Modulation” project under the supervision of \href{https://www.linkedin.com/in/alipusane/}{\color{blue}Prof. Dr. Ali Emre Pusane}.}
+            % \resumeItem{Simulated the Brownian motion of molecules in a SISO MCvD system and predicted simulation parameters such as receiver radius, diffusion coefficient, and transmitter-receiver distance using CNNs with Keras and TensorFlow.}
+            % \resumeItem{Plotted the arrival of molecules per symbol duration in a SISO MCvD system using Binomial, Poisson, and Gaussian model approximations with MATLAB.}
+            % \resumeItem{Ran Monte Carlo simulations of the Gaussian model to encode and decode randomized binary sequences in a SISO MCvD system using BCSK modulation technique and calculated the bit error rate on Z-channel.}
+        % \resumeItemListEnd
+
+    % \vspace{20pt}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+
+\section{Awards \& Achievements}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+    
+        
+        \textbf{Trinity College Academic Gold Medal:}{Awarded to graduating students who achieved over a certain grade point avereage througout the four year degree.} \\ \vspace{3pt}
+        \textbf{Trinity College Entrance Exhibition Prize:}{Awarded to incoming students who achieved over certain points in the entrance examinations (CAO points)} \\ \vspace{3pt}
+        
+        
+        \textbf{William Hasslett Memorial Prize:}{Awarded to the St Andrew's College student with the best high school grades (in the Leaving Certificate Examinations)  (2017)}
+    }}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- PROJECTS -----------
+
+%\section{Projects}
+%    \vspace{3pt}
+%    \resumeSubHeadingListStart
+      
+%      \resumeProjectHeading
+%        {\textbf{Filters and Fractals} $|$ \emph{\href{https://github.com/arasgungore/filters-and-fractals}{\color{blue}GitHub}}}{}
+%         \resumeItemListStart
+%            \resumeItem{A C project which implements a variety of image processing operations that manipulate the size, filter, brightness, contrast, saturation, and other properties of PPM images from scratch and recursive fractal generation functions to model popular fractals including Mandelbrot set, Julia set, Koch curve, Barnsley fern, and Sierpinski triangle.}
+%          \resumeItemListEnd
+      
+%      \resumeProjectHeading
+%        {\textbf{Chess Bot} $|$ \emph{\href{https://github.com/arasgungore/chess-bot}{\color{blue}GitHub}}}{}
+%          \resumeItemListStart
+%            \resumeItem{A C++ project in which you can play chess against an AI with a specified decision tree depth that uses alpha-beta pruning algorithm to predict the optimal move. Aside from basic moves, this mini chess engine also implements chess rules such as castling, en passant, fifty-move rule, threefold repetition, and pawn promotion.}
+%          \resumeItemListEnd
+      
+%     \resumeProjectHeading
+%        {\textbf{DS\&A Projects} $|$ \emph{\href{https://github.com/arasgungore/CMPE250-projects}{\color{blue}GitHub}}}{}
+%          \resumeItemListStart
+%            \resumeItem{Five Java projects that apply DS\&A concepts such as discrete-event simulation using priority queues, Dijkstra's shortest path algorithm, Prim's algorithm to find the minimum spanning tree, Dinic's algorithm for maximum flow problems, and weighted job scheduling with dynamic programming to real-world problems.}
+%          \resumeItemListEnd
+      
+%    \resumeSubHeadingListEnd
+
+
+
+
+
+%----------- HOBBIES -----------
+
+\section{Hobbies}
+  \resumeSubHeadingListStart
+  \small{\item{Jazz Guitar \& Piano, Olympic Weightlifitng, Cycling, Chess, 8-Ball Pool, Reading}}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- REFERENCES -----------
+\section{References}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \item{Susan Spence (SoftCo founder) , }
+   \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
