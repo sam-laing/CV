@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1713526706 "cv.tex" "cv.pdf" "cv" 1713526706
+["pdflatex"] 1721812407 "cv.tex" "cv.pdf" "cv" 1721812407
   "/etc/texmf/web2c/texmf.cnf" 1698408728 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc" 1463430686 1687 f004baecce60175c6453d0e3f808cf20 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome/fontawesometwo.enc" 1463430686 2679 32dd8ae231bf4a0752b98f62dc097183 ""
@@ -12,7 +12,6 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1136768653 1520 eccf95517727cb11801f4f1aee3a21b4 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
-  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1136768653 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
@@ -101,9 +100,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1699023627 4036811 4cb80868003c86b962b6b5ae1e1e2902 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1711014715 1405646 290f15be197b7c8abf7ccf199fa297d2 ""
-  "cv.aux" 1713526706 1521 c86043caff88672de4329698ec35530a "pdflatex"
-  "cv.out" 1713526706 685 4e8357c1bd342e2bd3240b7bfff48b79 "pdflatex"
-  "cv.tex" 1713526705 12998 99a5f69504f46dfcd484a61a70d2c858 ""
+  "cv.aux" 1721812407 1521 c86043caff88672de4329698ec35530a "pdflatex"
+  "cv.out" 1721812407 685 4e8357c1bd342e2bd3240b7bfff48b79 "pdflatex"
+  "cv.tex" 1721812393 13444 6573689a5dace618c7523e8dc094d48d ""
   (generated)
   "cv.aux"
   "cv.log"
