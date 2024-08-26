@@ -1,6 +1,6 @@
-*.aux
-*.fls
-*.out
+cv.aux
+cv.fls
+cv.out
 cv.synctex.gz
-*.log
-cv.fdb.latexmk
+cv.log
+cv.fdb._latexmk
