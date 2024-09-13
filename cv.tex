@@ -78,11 +78,23 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeJobSubheading}[5]{
+
+\newcommand{\resumeSubheadingDBL}[6]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small#6} \\ 
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeJobSubheading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      	\textit{\small#3} & \textit{\small #4} \\
+      	\textit{\small#5} & \textit{\small #6} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -146,17 +158,16 @@
     $|$
     \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/sam-laing-196403214}{LinkedIn}
     $|$
-    \faGithub \hspace{.5pt} \href{https://github.com/}{GitHub}
+    \faGithub \hspace{.5pt} \href{https://github.com/sam-laing}{GitHub}
     $|$
-    \faMapMarker \hspace{.5pt} \href{https://www.google.com/maps/place/Dublin+Pearse/@53.3433306,-6.2505958,17z/data=!3m1!4b1!4m6!3m5!1s0x48670e9108066ca5:0x500d7bb07899f3d!8m2!3d53.3433274!4d-6.2480209!16s%2Fg%2F11bxg0m2g7?entry=ttu}{Dublin, Ireland}
+    \faMapMarker \hspace{.5pt} \href{https://maps.app.goo.gl/zDdAp6SFpdj8fM548}{Tuebingen, Germany}
 \end{center}
 
 %----------- INTRODUCTION -----------
 \section{Introduction}
-   I am a highly motivated individual with a passion for problem solving. I have a strong interest in both the underlying theory and the application of machine learning algorithms. In particular, I am interested in deep learning models and Bayesian machine learning.
+ I am a machine learning engineer with a keen interest in both the underlying theory and the application and deployment of machine learning algorithms. In particular, I am interested in deep learning models, Bayesian machine learning and model calibration.
 
 %----------- SKILLS -----------
-
 \section{Skills}
   \vspace{2pt}
   \resumeSubHeadingListStart
@@ -164,9 +175,9 @@
         
         \textbf{Languages:}{ Python, C++, SQL, , R, \LaTeX, Prolog, } \\ \vspace{3pt}
         
-        \textbf{Technologies:}{PyTorch, JAX, Pandas, Git, DuckDB, FastAPI, Azure, JetBrains, SLURM, GraphX, WandB, Numpy, Plotly} \\ \vspace{3pt}
+        \textbf{Technologies:}{PyTorch, JAX, Git, Pandas, FastAPI, Azure, JetBrains, SLURM, GraphX, WandB, Numpy, Plotly} \\ \vspace{3pt}
         
-	\textbf{Techniques:}{CNNs, RNNs, Transformers, XGBoost , Random Forrest Models, Hypothesis Testing, GLMs, Gaussian Processes, Markov Chains, Deep Q-learning, Imitation Learning, SNGP, DUQ  }
+	\textbf{Techniques:}{CNN, RNN, Transformers, XGBoost, Random Forrest Models, Hypothesis Testing, GLMs, Gaussian Processes, Markov Chains, Deep Q-learning, Imitation Learning, SNGP, DUQ }
         
     }}
   \resumeSubHeadingListEnd
@@ -182,14 +193,16 @@
     \resumeJobSubheading
       {\href{https://softco.com/}{SoftCo}}{Dublin, Ireland}
       {Machine Learining Engineer}{May 2023 \textbf{--} Present, Part-time}
-      { }
+      { Business Analyst Intern}{May 2022 - September 2022}
         \resumeItemListStart
-	\resumeItem{SoftCo develops Purchase to Pay (P2P) financial automation software.  This involves matching invoice line level data with purchase order and associated logistics data.  I joined a team to provide skills on machine learning and I built a Bayesian module to automate and increase the matching rates.  I achieved in excess of 90\% touchless processing.  SoftCo was able to take customer raw data and prove they could deliver in excess of 90\% auto match as part of the sales process.  This had a positive impact on sales as SoftCo won a greater number of new customers at a higher invoice volume.  The customer achieved significant cost savings as they only had to process the exceptio}
+	\resumeItem{SoftCo develops Purchase to Pay (P2P) financial automation software.  This involves matching invoice line level data with purchase order and associated logistics data.  I joined a team to provide skills on machine learning and I built a Bayesian module to automate and increase the matching rates.  I achieved in excess of 90\% touchless processing.  SoftCo was able to take customer raw data and prove they could deliver in excess of 90\% auto match as part of the sales process.  This had a positive impact on sales as SoftCo won a greater number of new customers at a higher invoice volume.  The customer achieved significant cost savings as they only had to process the exceptions}
 	    \resumeItem{Developed and deployed a Random Forrest model for multi-label classification task with a large number of classes}
 	    \resumeItem{Developed a JSON file parser and contributed to the construction of an Azure data pipeline.}
+
+	    %\resumeItem{Assisted in the construction of a JSON file parser which was used to collect training data for the development of ML models}
 	    \resumeItem{Developed a number of forecasting models to predict customer activity and revenue}
-	    \resumeItem{Communicated frequently with Software Engineers through the Agile Scrum Framework regarding the deployment of models into production, the database architectures and the model APIs.}
-	    \resumeItem{Compiled supporting documentation on machine learning models and technical infrastructure}
+	    \resumeItem{Communicated frequently with Software Engineers through the Agile Scrum Framework}
+	    \resumeItem{Compiled supporting documentation on machine learning models}
         \resumeItemListEnd
 
 	\resumeSubheading
@@ -198,7 +211,7 @@
 	\resumeItemListStart
 
 	\resumeItem{Conducted research into the utility of soft label datasets for bulding better calibrated deep networks.}
-\resumeItem{In particular investigated their utility in comparison to using regularization techniques like MixUp, Manifold Mixup, CutMix and Dropout along with distance aware networks like SNGP, DUQ and Mahalanobis Distance.}
+\resumeItem{In particular investigated their utility in comparison to using regularization techniques like MixUp, Manifold Mixup, CutMix and Dropout when using distance aware networks like SNGP, DUQ and Mahalanobis Distance.}
 
 	\resumeItemListEnd
 
@@ -226,9 +239,9 @@
         \resumeItemListStart
 	\resumeItem{Corrected assignments for the advanced Engineering Mathematics course offerred at Trinity College Dublin. The topics included Fourier Analysis, Partial Differential Equations and Linear Programming.}
         \resumeItemListEnd
-	\resumeSubheading
-	{Self Employed}{Sep 2019 - June 2022}
-	{Mathematics Tutor}{Dublin Ireland}
+%	\resumeSubheading
+%	{Self Employed}{Sep 2019 - June 2022}
+%	{Mathematics Tutor}{Dublin Ireland}
     
     % \resumeSubheading
       % {Nanonetworking Research Group, Boğaziçi University}{Istanbul, Turkey}
@@ -281,6 +294,8 @@
         
         \textbf{William Hasslett Memorial Prize:}{Awarded to the St Andrew's College student with the best high school grades and attending Trinity College (in the Leaving Certificate Examinations)  (2017)}
     }}
+
+     \textbf{University of California, Berkeley: }{Was awarded an academic scholarship to Berkeley for an exchange year. Was unable to attend due to the covid pandemic} \\ \vspace{3pt}
   \resumeSubHeadingListEnd
 
 
@@ -317,9 +332,9 @@
 
 %----------- HOBBIES -----------
 
-\section{Hobbies}
+  \section{Hobbies \& Interests}
   \resumeSubHeadingListStart
-  \small{\item{Jazz Guitar \& Piano, Olympic Weightlifitng, Cycling, Chess, 8-Ball Pool, Spikeball}}
+  \small{\item{Jazz Guitar \& Piano, Olympic Weightlifitng, Road Cycling, Chess, 8-Ball Pool, Spikeball, Beach Volleyball}}
   \resumeSubHeadingListEnd
 
 
@@ -328,7 +343,8 @@
 \section{References}
   \vspace{2pt}
   \resumeSubHeadingListStart
-  \item{\href{https://www.linkedin.com/in/susan-spence-08a3062/}{Susan Spence} (SoftCo co-founder), \href{susan.spence7@gmail.com}{email}}
+\item{\href{https://www.linkedin.com/in/susan-spence-08a3062/}{Susan Spence} (SoftCo co-founder), \href{susan.spence@manverton.com}{email}}
+\item{\href{https://www.linkedin.com/in/sean-m-013b621b7?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bt%2FbCMsvDQSiQv36B4adOpA%3D%3D}{Sean Moiselle} (Machine Learning Engineer), \href{Seanmoiselle@gmail.com}{email}}
    \resumeSubHeadingListEnd
 
 
