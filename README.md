@@ -1,4 +1,4 @@
-# 📝 [Your Name]'s CV
+# 📝 Sam Laing's CV
 
 Welcome to my public CV repository! This repository contains my professional curriculum vitae. 
 
