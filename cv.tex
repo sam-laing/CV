@@ -5,7 +5,14 @@
 %------------------------
 
 \documentclass[letterpaper,10pt]{article}
-
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref} % Optional: Use [colorlinks=true, urlcolor=blue] for colored links
+\hypersetup{
+    colorlinks=true,
+    urlcolor=blue,
+    linkcolor=black,
+    citecolor=black
+}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -165,16 +172,16 @@
 
 %----------- INTRODUCTION -----------
 \section{Personal Statement}
-Machine Learning Engineer with a Master’s degree from the University of Tübingen and First-Class Honours in Mathematics from Trinity College Dublin. Experienced in building and deploying ML models in real-world fintech systems, with a focus on model optimization, data pipelines, and MLOps. Strong foundation in mathematics and research, with interests in deep learning, transformer architectures, and scalable ML infrastructure. Looking to join a tech-forward team to build production-grade AI solutions and tackle complex ML challenges.
+Machine Learning Engineer with experience building and deploying ML models in production fintech systems. Skilled in model optimization, scalable data pipelines, analytics and MLOps, with a track record of delivering meaurable impact through data-driven ML systems. Passionate about deep learning, large-scale ML infrastructure and building production-grade AI systems. Hold an MSc. in Computer Science and a Bachelor's in mathematics. Seeking a position as Machine Learning Engineer/Data Scientist to leverage my expertise to building impactful data-driven projects. 
 
 
 %----------- SKILLS -----------
-\section{Skills}
+\section{Professional Skills}
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
         
-        \textbf{Languages:}{ Python, C++, SQL, R} \\ \vspace{3pt}
+        \textbf{Programming Languages:}{ Python, C++, SQL, R} \\ \vspace{3pt}
         
         \textbf{ML Tools:}{PyTorch, JAX, WandB, Torch Lightning, Numpy, Pandas, Scikit-learn, Optuna, } \\ \vspace{3pt}
 
@@ -194,21 +201,28 @@ Machine Learning Engineer with a Master’s degree from the University of Tübin
   \vspace{3pt}
   \resumeSubHeadingListStart
 
-    \resumeJobSubheading
-      {\href{https://softco.com/}{SoftCo}}{Dublin, Ireland}
-      {\textbf{Machine Learining Engineer}}{May 2023 \textbf{--} April 2025, Part-time}
-      {Business Analyst Intern}{May 2022 - September 2022}
+    \resumeSubheading
+      {ELLIS Institute/Max Planck Institute}{Tübingen, Germany}
+{\textbf{Research Engineer}}{Sep 2025 \textbf{--} Present}
         \resumeItemListStart
-	\resumeItem{Developed and deployed a Bayesian invoice-matching module, enabling 95\%+ touchless processing and automating a significant portion of AP services. This solution enhanced sales by demonstra    ting high auto-match rates during customer onboarding, leading to increased customer acquisition and     significant cost savings for clients.}
+	\resumeItem{Researching methods to enhance the pre-training of GPT-style language models, targeting both improvements in training efficiency and the foundational understanding of the optimization process.}
+	\resumeItem{Particularly interested in understanding the Muon optimizer and its contemporaries in contrast to more popular adaptive methods}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://softco.com/}{SoftCo}}{Dublin, Ireland}
+      {\textbf{Machine Learning Engineer}}{May 2023 \textbf{--} April 2025, Part-time}
+        \resumeItemListStart
+	\resumeItem{Developed and deployed a Bayesian invoice-matching module, enabling 95\%+ touchless processing and automating a significant portion of AP services. This solution enhanced sales by demonstrating high auto-match rates during customer onboarding, leading to increased customer acquisition and     significant cost savings for clients.}
 	    \resumeItem{Developed and deployed a Random Forrest model as part of a product automating invoice coding to eliminate manual effort for customers. The project involved multi-label classification task with a large number of classes. }
     \resumeItem{Implemented data parsers and contributed to an Azure-based ETL pipeline to support model training workflows.}
-	    \resumeItem{Produced comprehensive documentation for machine learning models to ensure clarity and reproducibility and worked within Agile framework}
+	    \resumeItem{Produced comprehensive documentation to ensure clarity and reproducibility working within Agile framework}
         \resumeItemListEnd
 	\resumeSubheading
-	{University Of Tuebingen}{Tuebingen, Germany}
+	{University Of Tübingen}{Tübingen, Germany}
 {\textbf{Student Researcher}}{May 2024 - September 2024}
 	\resumeItemListStart
-	\resumeItem{Researched the effectiveness of soft label datasets in improving the calibration of deep neural networks, comparing their utility against regularization techniques such as MixUp, Manifold MixUp, CutMix, and Dropout in distance-aware networks like SNGP, DUQ, and Mahalanobis Distance. \href{https://github.com/sam-laing/soft_cifar}{Github Repository} of some work here
+	\resumeItem{Researched the effectiveness of soft label datasets in improving the calibration of deep neural networks, comparing their utility against regularization techniques such as MixUp, Manifold MixUp, CutMix, and Dropout in distance-aware networks like SNGP, DUQ, and Mahalanobis Distance. (\href{https://github.com/sam-laing/soft_cifar}{Github Repository})
 	\resumeItemListEnd
 
 
@@ -222,12 +236,6 @@ Machine Learning Engineer with a Master’s degree from the University of Tübin
 %        \resumeItemListEnd
 
 
-    \resumeSubheading
-      {Trinity College}{Dublin, Ireland}
-{\textbf{Teaching Assistant}}{Sep 2021 \textbf{--} Dec 2021 and Sep 2022 - December 2022}
-        \resumeItemListStart
-	\resumeItem{Lead tutorials for the advanced Engineering Mathematics course offerred at Trinity College Dublin. The topics included Fourier Analysis, Partial Differential Equations and Linear Programming.}
-        \resumeItemListEnd
 %	\resumeSubheading
 %	{Self Employed}{Sep 2019 - June 2022}
 %	{Mathematics Tutor}{Dublin Ireland}
@@ -255,14 +263,14 @@ Machine Learning Engineer with a Master’s degree from the University of Tübin
     \resumeEducationHeading
       {University of Tuebingen
       }{Germany}
-      {MSc. in Machine Learning;   \textbf{Current Grade Average: 1.4 (equivalent 3.8 GPA USA)}}{Oct 2022 \textbf{--} Present}
+      {MSc. in Machine Learning;   \textbf{Grade 1.3 (sehr gut) }}{Oct 2022 \textbf{--} July 2025}
 
         %\small{\item{
 	%\textbf{Relevant coursework:} Deep Learning, Statistical Machine Learning, Probabalistic Machine Learning, Trustworthy Machine learning, Time Series Analysis, Self Driving Cars, Massively Parallel Computing (CUDA Programming), Information Theory }}
 
 %        \small{\item{
 			\textbf{Master's Thesis: }	
-	Conducting research into adaptive optimizers for transformer foundation models. In particular, interested in second-order optimization, LLM pretraining and fast training. Supervised by \href{http://orvi.altervista.org/}{Antonio Orvieto}}}
+	Researched adaptive and second-order optimizers (in particular, Muon) for transformer-based language models. In particular, was interested in pretraining efficiency and understanding training dynamics. Supervised by \href{http://orvi.altervista.org/}{Dr. Antonio Orvieto}}}
 	\resumeItemListEnd
         \resumeSubHeadingListStart
     \resumeEducationHeading
@@ -280,7 +288,7 @@ Machine Learning Engineer with a Master’s degree from the University of Tübin
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{Trinity College Academic Gold Medal:}{Awarded to graduating students who achieved over a certain grade point average througout the four year degree.} \\ \vspace{3pt}
+        \textbf{Trinity College Academic Gold Medal: }{Awarded for academic excellence throughout 4 years of study} \\ \vspace{3pt}
 %        \textbf{Trinity College Entrance Exhibition Prize:}{Awarded to incoming students who achieved over certain points in the entrance examinations (CAO points)} \\ \vspace{3pt}
         
         
@@ -339,7 +347,7 @@ Machine Learning Engineer with a Master’s degree from the University of Tübin
   
   \resumeSubHeadingListStart
   \item{Susan Spence, Co-founder SoftCo \& Manverton (\href{susan.spence@manverton.com}{email})\\}
-  \item{Neil Kelly, Product Manager SoftCo (\href{neilthomaskelly@gmail.com}{email}}
+  \item{Neil Kelly, Product Manager SoftCo (\href{neilthomaskelly@gmail.com}{email}})
    \resumeSubHeadingListEnd
 
 %  \resumeSubHeadingListStart
@@ -349,4 +357,5 @@ Machine Learning Engineer with a Master’s degree from the University of Tübin
 
 
 %-------------------------------------------
+
 \end{document}
